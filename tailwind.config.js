@@ -49,6 +49,25 @@ module.exports = {
 					fontWeight: '500',
 				},
 			],
+			'body-l': [
+				'1rem',
+				{
+					fontWeight: '700',
+				},
+			],
+			'body-m': [
+				'0.875rem',
+				{
+					fontWeight: '400',
+				},
+			],
+			'body-s': [
+				'0.75rem',
+				{
+					lineHeight: '20px',
+					fontWeight: '400',
+				},
+			],
 		},
 	},
 	plugins: [],
