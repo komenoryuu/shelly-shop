@@ -10,6 +10,11 @@ export type TUiProps = {
 	children: React.ReactNode;
 };
 
+export type TLinkTo = {
+	className?: string;
+	linkTo: string;
+};
+
 export type TSelectedPropsOmit = Omit<TSelectedProps, 'children'>;
 
 export type TUiPropsOmit = Omit<TUiProps, 'onClick'>;

@@ -12,7 +12,10 @@ export { Twitter } from './icons/Twitter';
 export { UserIcon } from './icons/User-icon';
 
 // Ui
-export { Link } from './Link';
+export { LinkUi } from './LinkUi';
+
+// TODO: add eslint exception
 export { H5 } from './H5';
+
 export { Button } from './Button';
 export { Badge } from './Badge';
