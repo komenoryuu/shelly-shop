@@ -1,8 +1,6 @@
-interface LikeProps {
-	onClick: () => void;
-}
+import { FC } from 'react';
 
-export const Like = ({ onClick }: LikeProps) => (
+export const Like: FC<{ onClick: () => void }> = ({ onClick }) => (
 	<svg
 		className='cursor-pointer transition-all hover:fill-black'
 		onClick={onClick}

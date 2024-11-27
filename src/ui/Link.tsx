@@ -1,10 +1,7 @@
-interface LinkProps {
-	isSelected?: boolean;
-	onClick: () => void;
-	children: React.ReactNode;
-}
+import { FC } from 'react';
+import { TSelectedProps } from './types/types';
 
-export const Link = ({ isSelected = false, onClick, children }: LinkProps) => (
+export const Link: FC<TSelectedProps> = ({ isSelected = false, onClick, children }) => (
 	<a
 		className={`${
 			isSelected ? 'is-selected pb-7' : ''

@@ -15,3 +15,4 @@ export { UserIcon } from './icons/User-icon';
 export { Link } from './Link';
 export { H5 } from './H5';
 export { Button } from './Button';
+export { Badge } from './Badge';

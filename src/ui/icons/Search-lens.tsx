@@ -1,8 +1,6 @@
-interface SearchLensProps {
-	onClick: () => void;
-}
+import { FC } from 'react';
 
-export const SearchLens = ({ onClick }: SearchLensProps) => (
+export const SearchLens: FC<{ onClick: () => void }> = ({ onClick }) => (
 	<svg
 		className='cursor-pointer'
 		onClick={onClick}

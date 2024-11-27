@@ -1,9 +1,7 @@
-interface ShoppingCartProps {
-	isSelected?: boolean;
-	onClick: () => void;
-}
+import { FC } from 'react';
+import { TSelectedPropsOmit } from '../types/types';
 
-export const ShoppingCart = ({ isSelected = false, onClick }: ShoppingCartProps) => (
+export const ShoppingCart: FC<TSelectedPropsOmit> = ({ isSelected = false, onClick }) => (
 	<a
 		className={`${isSelected ? 'is-selected pb-7' : ''} group relative cursor-pointer`}
 		onClick={onClick}

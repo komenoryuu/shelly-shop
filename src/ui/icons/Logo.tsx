@@ -1,8 +1,6 @@
-interface LogoProps {
-	onClick: () => void;
-}
+import { FC } from 'react';
 
-export const Logo = ({ onClick }: LogoProps) => (
+export const Logo: FC<{ onClick?: () => void }> = ({ onClick }) => (
 	<svg
 		onClick={onClick}
 		xmlns='http://www.w3.org/2000/svg'

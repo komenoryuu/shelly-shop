@@ -1,9 +1,7 @@
-interface UserIconProps {
-	isSelected?: boolean;
-	onClick: () => void;
-}
+import { FC } from 'react';
+import { TSelectedPropsOmit } from '../types/types';
 
-export const UserIcon = ({ isSelected = false, onClick }: UserIconProps) => (
+export const UserIcon: FC<TSelectedPropsOmit> = ({ isSelected = false, onClick }) => (
 	<a
 		className={`${isSelected ? 'is-selected pb-7' : ''} group relative cursor-pointer`}
 		onClick={onClick}
