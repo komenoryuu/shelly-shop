@@ -3,15 +3,13 @@ interface ShoppingCartProps {
 	onClick: () => void;
 }
 
-export const ShoppingCart = ({
-	isSelected = false,
-	onClick,
-}: ShoppingCartProps) => (
-	<div
-		className={`${isSelected ? 'is-selected' : ''} group inline-block cursor-pointer`}
+export const ShoppingCart = ({ isSelected = false, onClick }: ShoppingCartProps) => (
+	<a
+		className={`${isSelected ? 'is-selected pb-7' : ''} group relative cursor-pointer`}
 		onClick={onClick}
 	>
 		<svg
+			className='inline'
 			width='21'
 			height='21'
 			viewBox='0 0 21 21'
@@ -22,6 +20,6 @@ export const ShoppingCart = ({
 			<path d='M6.15234 17.8828C6.15234 18.9005 6.98035 19.7285 7.99805 19.7285C9.01575 19.7285 9.84375 18.9005 9.84375 17.8828C9.84375 16.8651 9.01575 16.0371 7.99805 16.0371C6.98035 16.0371 6.15234 16.8651 6.15234 17.8828ZM7.99805 17.2676C8.33723 17.2676 8.61328 17.5436 8.61328 17.8828C8.61328 18.222 8.33723 18.498 7.99805 18.498C7.65887 18.498 7.38281 18.222 7.38281 17.8828C7.38281 17.5436 7.65887 17.2676 7.99805 17.2676Z' />
 			<path d='M14.8476 17.8828C14.8476 18.9005 15.6756 19.7285 16.6933 19.7285C17.711 19.7285 18.539 18.9005 18.539 17.8828C18.539 16.8651 17.711 16.0371 16.6933 16.0371C15.6756 16.0371 14.8476 16.8651 14.8476 17.8828ZM16.6933 17.2676C17.0325 17.2676 17.3086 17.5436 17.3086 17.8828C17.3086 18.222 17.0325 18.498 16.6933 18.498C16.3541 18.498 16.0781 18.222 16.0781 17.8828C16.0781 17.5436 16.3541 17.2676 16.6933 17.2676Z' />
 		</svg>
-		<div className='mx-auto hidden h-5 w-0.5 rotate-90 bg-black group-[.is-selected]:block'></div>
-	</div>
+		<span className='absolute bottom-0 left-0 hidden h-0.5 w-full bg-black align-top group-[.is-selected]:inline'></span>
+	</a>
 );

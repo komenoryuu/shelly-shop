@@ -4,11 +4,12 @@ interface UserIconProps {
 }
 
 export const UserIcon = ({ isSelected = false, onClick }: UserIconProps) => (
-	<div
-		className={`${isSelected ? 'is-selected' : ''} group inline-block cursor-pointer`}
+	<a
+		className={`${isSelected ? 'is-selected pb-7' : ''} group relative cursor-pointer`}
 		onClick={onClick}
 	>
 		<svg
+			className='inline'
 			width='22'
 			height='22'
 			viewBox='0 0 22 22'
@@ -26,6 +27,6 @@ export const UserIcon = ({ isSelected = false, onClick }: UserIconProps) => (
 				fill='white'
 			/>
 		</svg>
-		<div className='m-auto hidden h-5 w-0.5 rotate-90 bg-black group-[.is-selected]:block'></div>
-	</div>
+		<span className='absolute bottom-0 left-0 hidden h-0.5 w-full bg-black align-top group-[.is-selected]:inline'></span>
+	</a>
 );
