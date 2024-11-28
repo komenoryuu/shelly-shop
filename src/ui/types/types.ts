@@ -17,6 +17,11 @@ export type TLinkUiProps = {
 	children: React.ReactNode;
 };
 
+export type TSearchLendProps = {
+	className?: string;
+	onClick?: () => void;
+};
+
 export type TSelectedPropsOmit = Omit<TSelectedProps, 'children'>;
 
 export type TUiPropsOmit = Omit<TUiProps, 'onClick'>;

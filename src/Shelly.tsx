@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router';
+import { SearchPanel } from './components';
 
 function Shelly() {
 	return (
@@ -6,7 +7,14 @@ function Shelly() {
 			{/* <Header/> */}
 			<main>
 				<Routes>
-					<Route path='/' element={<div>Main Page</div>} />
+					<Route
+						path='/'
+						element={
+							<div>
+								<SearchPanel onChange={() => {}} />
+							</div>
+						}
+					/>
 					<Route path='/shop' element={<div>Shop page</div>} />
 					<Route path='/shop/:id' element={<div>Poduct page</div>} />
 					<Route path='/cart' element={<div>Cart page</div>} />

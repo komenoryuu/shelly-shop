@@ -31,3 +31,10 @@ export type TSwitchPanelProps = {
 	action: () => void;
 	children: React.ReactNode;
 };
+
+// Select
+export type TSelectProps = {
+	sortBy: string;
+	onChange: () => void;
+	options: string[];
+};

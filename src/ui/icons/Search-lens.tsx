@@ -1,8 +1,9 @@
 import { FC } from 'react';
+import { TSearchLendProps } from '../types/types';
 
-export const SearchLens: FC<{ onClick: () => void }> = ({ onClick }) => (
+export const SearchLens: FC<TSearchLendProps> = ({ className, onClick }) => (
 	<svg
-		className='cursor-pointer'
+		className={`${className} cursor-pointer`}
 		onClick={onClick}
 		width='21'
 		height='21'

@@ -58,14 +58,14 @@ module.exports = {
 			'body-m': [
 				'0.875rem',
 				{
-					fontWeight: '400',
+					fontWeight: '500',
 				},
 			],
 			'body-s': [
 				'0.75rem',
 				{
 					lineHeight: '20px',
-					fontWeight: '400',
+					fontWeight: '500',
 				},
 			],
 		},
