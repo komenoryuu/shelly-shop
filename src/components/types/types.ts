@@ -1,3 +1,16 @@
+// Navigation
+type TNavigationObject = {
+	title: string;
+	linkTo: string;
+	isSelected: boolean;
+};
+
+export type TNavigationProps = {
+	className?: string;
+	navLinks: TNavigationObject[];
+};
+
+// Product Card
 export type TProductImageProps = {
 	margin?: string;
 	imgStyle: string;
@@ -13,10 +26,8 @@ export type TProductDetailsProps = {
 	price: string;
 };
 
-export type TNavigationProps = {
-	className?: string;
-	link: string[];
-	onClick: () => void;
-	title: string[];
-	isSelected?: boolean[];
+// Switch Panel
+export type TSwitchPanelProps = {
+	action: () => void;
+	children: React.ReactNode;
 };

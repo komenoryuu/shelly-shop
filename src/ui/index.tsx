@@ -19,3 +19,4 @@ export { H5 } from './H5';
 
 export { Button } from './Button';
 export { Badge } from './Badge';
+export { Switch } from './Switch';

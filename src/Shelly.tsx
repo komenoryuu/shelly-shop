@@ -6,7 +6,7 @@ function Shelly() {
 			{/* <Header/> */}
 			<main>
 				<Routes>
-					<Route path='/' element={<div>Main gape</div>} />
+					<Route path='/' element={<div>Main Page</div>} />
 					<Route path='/shop' element={<div>Shop page</div>} />
 					<Route path='/shop/:id' element={<div>Poduct page</div>} />
 					<Route path='/cart' element={<div>Cart page</div>} />
